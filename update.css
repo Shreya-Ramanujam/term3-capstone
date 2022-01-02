@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+            *{
+              margin:0;
+              padding:0;
+            }
+            body{
+              font-family: 'Baloo Bhaijaan 2', cursive;
+              background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            }
+
+
+input, select{
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: transparent;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin-top: 5px;
+    background: rgb(6,14,131);
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: none;
+    margin-bottom: 20px;
+}
+
+button:hover {
+     background: rgb(0,3,255);
+  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10px; */
+    margin: 250px;
+    padding: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 120px;
+    box-shadow: -12px 14px 25px 0px rgba(125,102,102,0.84);
+-webkit-box-shadow: -12px 14px 25px 0px rgba(125,102,102,0.84);
+-moz-box-shadow: -12px 14px 25px 0px rgba(125,102,102,0.84);
+border-radius: 20px;
+
+}
+
+.cn{
+    margin-top: 20px;
+}
+
+.cn, .email, .address, .city, .state, .pin, .ecn{
+    display: flex;
+}
+
+#contactnumber{
+    margin-left: 100px;
+}
+
+#email{
+    margin-left: 125px;
+}
+
+#address{
+    margin-left: 185px;
+}
+
+
+#city{
+    margin-left: 230px;
+}
+
+#stateorprovince{
+    margin-left: 95px;
+}
+
+#pincode{
+    margin-left: 180px;
+}
+
+#econtact{
+    margin-left: 70px;
+}

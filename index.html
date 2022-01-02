@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Enrollment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./header.png" alt="">
+    </div>
+    <div class="form">
+        <form action="./register.php" method="post">
+            <div class="top-part">
+                <div id="name">
+                    <h1>Name</h1>
+                    <input type="text" name="firstname" class="normal name" id="fname" placeholder="First Name">
+                    <input type="text" name="lastname" class="normal name" id="lname" placeholder="Last Name">
+                    </div>
+                    <div id="dob">
+                        <h1>Date Of Birth</h1>
+                        <input type="text" name="dateofbirth" class="long" id="birth">
+                    </div>
+                    <div id="sex">
+                        <h1>Sex</h1>
+                        <select name="sex">
+                            <option>Select your Sex</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>N/A</option>
+                        </select>
+                    </div>
+                    <div id="contact-number">
+                        <h1>Contact Number</h1>
+                        <input type="text" name="contactnumber" class="long" id="no" placeholder="9100000000">
+                    </div>
+                    <div id="email">
+                        <h1>Email</h1>
+                        <input type="text" name="email" class="long" id="mail" placeholder="name@email.com">
+                    </div>
+                    <div id="address">
+                        <h1>Address</h1>
+                        <input type="text" name="address" class="long" id="home" placeholder="Enter your address"><br>
+                        <div class="two-more">
+                        <input type="text" name="city" class="normal" id="city" placeholder="Enter Your City Name">
+                        <select name="stateorprovince" id="state-or-province">
+                            <option>select your state</option>
+                                <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chhattisgarh</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharastra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttarakhand</option>
+                        <option>Uttar Pradesh</option>
+                        <option>West Bengal</option>
+                            </select>
+                        </div>
+                        <input type="text" name="pincode" class="long" id="pin-code" placeholder="Postal/Pin Code">
+                    </div>
+                    <div id="marital-status">
+                        <h1>Marital Status</h1>
+                        <select name="marital-status" id="select">
+                            <option>Select the Marital status of the patient</option>
+                            <option>Married</option>
+                            <option>Single</option>
+                            <option>Divorced</option>
+                            <option>Widowed</option>
+                        </select>
+                    </div>
+            </div>
+            <hr>
+            <p>In case of Emergency</p>
+            <div class="emergency bottom-part" id="something">
+                <div id="e_name">
+                    <h1>Emergency Contact</h1>
+                    <input type="text" name="firstname" class="normal name emergency_name" id="first" placeholder="First Name">
+                    <input type="text" name="lastname" class="normal name emergency_name" placeholder="Last Name">
+                    </div>
+                    <div id="relationship">
+                        <h1>Relationship</h1>   
+                        <input type="text" name="relationship" class="long" id="relation" placeholder="What's your relation with the patient">
+                    </div>
+                    <div id="e_contact">
+                        <h1>Contact Number</h1>
+                        <input type="text" name="contact-number" class="long" id="emergency_number" placeholder="Enter your contact number">
+                    </div>
+                    <div id="weight">
+                        <h1>Weight (In Pounds)</h1>
+                        <input type="text" name="weight" id="pounds" class="normali" placeholder="Enter the patient's weight">
+                    </div>
+                    <div id="height">
+                        <h1>Height (In Inches)</h1>
+                        <input type="text" name="height" id="inch" class="normali" placeholder="Enter the patient's Height">
+                    </div>
+                    <button class="custom-btn btn-1" id="button" onclick="submit()">Submit</button></div>
+        </form>
+    </div>
+
+    <script>
+        var button = document.getElementById('button');
+        button.onclick=()=>{
+            location.href="./next.html"
+        }
+    </script>
+</body>
+</html>
